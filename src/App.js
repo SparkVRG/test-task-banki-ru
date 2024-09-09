@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import LoansSelection from './Components/LoansSelection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='*' element={<Navigate to='/sort/min/amount/0' />} />
+        <Route path='/sort/:name/amount/:id' element={<LoansSelection />} />
+      </Routes>
+
+      {/* Код выше написан для того, чтобы пользователь мог сохранять/передавать результаты поиска, а также для защиты от ввода неизвестного адреса. В адресе есть значение о порядке сортировки, а также число, в котором хранится значение суммы кредита, текущее на момент нажатия на кнопку "Поделиться".
+      Логика такая: если введён какой-либо неизвестный URL - перенаправляем пользователя на страницу /sort/min/amount/0 и отображаем результаты поиска с сортировкой от меньшего к большему и суммой кредита 0. Если после amount введено любое другое число - результаты поиска будут с той суммой кредита, которая там указана. То же и с сортировкой. */}
+    </>
   );
 }
 

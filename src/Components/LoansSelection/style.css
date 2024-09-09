@@ -1,0 +1,127 @@
+.loans-selection {
+    background-color: #F1F5F9;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 596px;
+}
+
+.loan-amount-field {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 26px 0;
+    width: 92.5%;
+}
+
+.loan-amount-field__input {
+    border: 1px solid #E1E4E9;
+    border-radius: 15px;
+    padding: 28px 23px;
+    width: 91.6%;
+    font-size: 24.5px;
+    color: #687082;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px auto 0;
+    width: 92.5%;
+}
+
+.buttons__sorting, .buttons__share, .buttons__sorting-max, .buttons__sorting-min {
+    display: flex;
+    align-items: center;
+    font-size: 21.2px;
+    color: #162136;
+    cursor: pointer;
+}
+
+.buttons__sorting:hover, .buttons__share:hover, .buttons__sorting-max:hover, .buttons__sorting-min:hover {
+    text-decoration: underline;
+}
+
+.buttons__sorting img {
+    margin-left: 13px;
+}
+
+.buttons__sorting-window {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    padding: 20px;
+    font-size: 21.2px;
+    color: #162136;
+}
+
+.buttons__sorting-min {
+    margin-top: 20px;
+}
+
+.buttons__share img {
+    margin-right: 13px;
+}
+
+.results {
+    margin: 28px auto 0;
+    width: 92.5%;
+}
+
+.results__item-container {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 23px 22px 32px;
+    cursor: pointer;
+}
+
+.results__item-container:not(:first-child) {
+    margin-top: 10px;
+}
+
+.results__item-title {
+    display: flex;
+}
+
+.results__item-logo {
+    width: 70px;
+}
+
+.results__item-name {
+    margin-top: 6px;
+    margin-left: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24.5px;
+    color: #162136;
+}
+
+.results__item-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.results__item-amount-title, .results__item-amount-sum {
+    display: inline-block;
+}
+
+.results__item-amount-title {
+    font-family: Arial, sans-serif;
+    font-size: 17.5px;
+    color: #687082;
+}
+
+.results__item-amount-sum {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #162136;
+}

@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import './reset.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+let root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Небольшое разъяснение по поводу TypeScript.
+// Несмотря на то, что TypeScript был посвящён целый раздел обучения, настоящей практики по нему у нас не было. Изначально я планировал разрабатывать данный проект на JavaScript, затем постепенно перевести его на TypeScript. Это оказалось очень сложно и, к сожалению, у меня не хватило времени на реализацию этой задумки. По этой причине проект разработан на JavaScript.
